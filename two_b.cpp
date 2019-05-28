@@ -68,4 +68,14 @@ cout << "Inserting " << item << '\n';
 rear = (rear + 1) % capacity;
 arr[rear] = item;
 count++;
+}
+// Utility function to return front element in the queue
+int queue::peek()
+{
+if (isEmpty())
+{
+cout << "UnderFlow\nProgram Terminated\n";
+exit(EXIT_FAILURE);
+}
+return arr[front];
 }}
