@@ -22,4 +22,9 @@ class fact
 			cout<<"Bye";
 		}
 };
+int main()
+{
+	fact obj;
+	return 0;
+}
 
