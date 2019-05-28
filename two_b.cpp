@@ -78,4 +78,9 @@ cout << "UnderFlow\nProgram Terminated\n";
 exit(EXIT_FAILURE);
 }
 return arr[front];
+}
+// Utility function to return the size of the queue
+int queue::size()
+{
+return count;
 }}
