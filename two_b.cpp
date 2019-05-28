@@ -31,4 +31,11 @@ bool isFull();
 };
 
 // Constructor to initialize queue
-
+queue::queue(int size)
+{
+arr = new int[size];
+capacity = size;
+front = 0;
+rear = -1;
+count = 0;
+}
