@@ -53,4 +53,19 @@ cout << "Removing " << arr[front] << '\n';
 front = (front + 1) % capacity;
 count--;
 }
+// Utility function to add an item to the queue
+void queue::enqueue(int item)
+{
+// check for queue overflow
+if (isFull())
+{
+cout << "OverFlow\nProgram Terminated\n";
+exit(EXIT_FAILURE);
 }
+
+cout << "Inserting " << item << '\n';
+
+rear = (rear + 1) % capacity;
+arr[rear] = item;
+count++;
+}}
