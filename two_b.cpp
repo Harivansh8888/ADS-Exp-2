@@ -38,4 +38,19 @@ capacity = size;
 front = 0;
 rear = -1;
 count = 0;
+// Utility function to remove front element from the queue
+void queue::dequeue()
+{
+// check for queue underflow
+if (isEmpty())
+{
+cout << "UnderFlow\nProgram Terminated\n";
+exit(EXIT_FAILURE);
+}
+
+cout << "Removing " << arr[front] << '\n';
+
+front = (front + 1) % capacity;
+count--;
+}
 }
