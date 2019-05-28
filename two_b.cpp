@@ -83,4 +83,15 @@ return arr[front];
 int queue::size()
 {
 return count;
+}
+// Utility function to check if the queue is empty or not
+bool queue::isEmpty()
+{
+return (size() == 0);
+}
+
+// Utility function to check if the queue is full or not
+bool queue::isFull()
+{
+return (size() == capacity);
 }}
