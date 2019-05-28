@@ -10,3 +10,16 @@ class fact
 			cin>>n;
 			cout<<"Factorial is : "<<factorial(n)<<endl;
 		}
+			int factorial(int n)
+		{
+			if (n>1)
+			    return n * factorial(n-1);
+			else
+			    return 1;
+		}
+		~fact()
+		{
+			cout<<"Bye";
+		}
+};
+
